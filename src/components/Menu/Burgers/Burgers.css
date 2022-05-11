@@ -1,0 +1,6 @@
+.burgers__card {
+  background-color: #ffc32c;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5rem;
+}

@@ -1,0 +1,17 @@
+.burgers__body {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 2rem;
+  row-gap: 5rem;
+}
+
+@media only screen and (min-width: 75em) {
+  .burgers__body {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.burgers__icon {
+  font-size: 9.5rem;
+  text-align: center;
+}

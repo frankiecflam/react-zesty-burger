@@ -1,0 +1,71 @@
+.about {
+  background-color: #d49700;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.about__body {
+  padding: 12.6rem 0 4.8rem 0;
+}
+
+.about__inner {
+  padding: 4.8rem 9.6rem;
+  background-color: #ffedc0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5rem;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 36em) {
+  .about__inner {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+.about__heading-primary {
+  text-transform: uppercase;
+  font-size: 4.8rem;
+  font-weight: 600;
+  letter-spacing: -0.1rem;
+  text-align: center;
+}
+
+.about__inner-body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  column-gap: 3rem;
+  row-gap: 5rem;
+}
+
+.about__inner-text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+  font-size: 2rem;
+  color: #6d6d6d;
+}
+
+.about__description {
+  line-height: 140%;
+}
+
+.about__storeInfo {
+  display: grid;
+  grid-template-columns: 15rem 1fr;
+  column-gap: 1rem;
+}
+
+.about__openingTimes {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.about__inner-img {
+  width: 100%;
+  max-height: 400px;
+  border-radius: 1rem;
+  object-fit: cover;
+}

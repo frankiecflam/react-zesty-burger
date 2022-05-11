@@ -1,0 +1,5 @@
+.burgerItems {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+  }

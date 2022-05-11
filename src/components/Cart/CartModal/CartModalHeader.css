@@ -1,0 +1,19 @@
+.cartModal__header {
+  position: relative;
+  background-color: #ffc32c;
+  padding: 2.4rem 0;
+}
+
+.cartModal__heading-primary {
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: -0.1rem;
+}
+
+.cartModal__close {
+  position: absolute;
+  top: 50%;
+  right: 2.4rem;
+  transform: translateY(-50%);
+  font-size: 2rem;
+}

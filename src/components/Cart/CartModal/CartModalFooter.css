@@ -1,0 +1,29 @@
+.cartModal__footer {
+  padding: 4.8rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.cartModal__footer-btn {
+  text-transform: capitalize;
+  padding: 1rem 2rem;
+  background-color: #d49700;
+  border-radius: 1rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.2);
+  border: none;
+  transition: all 0.4s;
+  color: #000;
+  text-decoration: none;
+}
+
+.cartModal__footer-btn:hover {
+  box-shadow: 0 1.5rem 2.5rem 0 rgba(0, 0, 0, 0.3);
+  transform: translateY(-0.5rem);
+}
+
+.cartModal__footer-btn:active {
+  box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.2);
+  transform: translateY(0rem);
+}

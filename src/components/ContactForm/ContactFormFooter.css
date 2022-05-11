@@ -1,0 +1,5 @@
+.contact__form-footer {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+}

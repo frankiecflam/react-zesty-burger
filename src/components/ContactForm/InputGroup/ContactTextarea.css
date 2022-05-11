@@ -1,0 +1,6 @@
+.contact__textarea {
+  width: 100%;
+  background-color: transparent;
+  border: 2px solid #000;
+  padding: 1rem 0.5rem;
+}

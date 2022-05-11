@@ -1,0 +1,6 @@
+.sides__body {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}

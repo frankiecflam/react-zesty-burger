@@ -1,0 +1,18 @@
+.nav__brand {
+  position: relative;
+  z-index: 9999;
+}
+
+.nav__logoLink {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2.5rem;
+  letter-spacing: -1px;
+}
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  z-index: 9999;
+}

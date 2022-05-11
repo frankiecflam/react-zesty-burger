@@ -1,0 +1,24 @@
+.burgerItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+  text-align: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.burgerItem__heading {
+  font-weight: 700;
+}
+
+.burgerItem__description {
+  color: #373737;
+  line-height: 140%;
+}
+
+.burgerItem__price {
+  font-weight: 600;
+  color: #373737;
+  font-size: 2.5rem;
+}

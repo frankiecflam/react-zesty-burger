@@ -1,0 +1,129 @@
+.cartOrderForm {
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid #000;
+  padding: 4.8rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+  align-items: center;
+}
+
+@media only screen and (min-width: 36em) {
+  .cartOrderForm {
+    width: 85%;
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  .cartOrderForm {
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+  .cartOrderForm {
+    width: 60%;
+  }
+}
+
+.cartOrderForm__heading-primary {
+  text-transform: capitalize;
+  letter-spacing: -0.1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.cartOrderForm__form-control {
+  align-self: stretch;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  position: relative;
+}
+
+.cartOrderForm__form-control label {
+  text-transform: uppercase;
+}
+
+.cartOrderForm__form-control input {
+  background-color: transparent;
+  padding: 0.5rem 0.25rem;
+}
+
+.cartOrderForm__feedback {
+  font-size: 2rem;
+}
+
+.cartOrderForm__feedback-icon {
+  position: absolute;
+  bottom: 36%;
+  right: 1%;
+}
+
+.cartOrderForm__feedback-correct {
+  display: none;
+  fill: green;
+}
+
+.cartOrderForm__feedback-incorrect {
+  display: none;
+  fill: red;
+}
+
+.cartOrderForm__feedback-incorrect-text {
+  opacity: 0;
+  font-size: 1.4rem;
+  color: #6d6d6d;
+  transition: all 0.4s;
+}
+.cartOrderForm__feedback-incorrect-text::first-letter {
+  text-transform: uppercase;
+}
+
+.correct .cartOrderForm__feedback-correct {
+  display: block;
+}
+
+.incorrect .cartOrderForm__feedback-incorrect {
+  display: block;
+}
+
+.incorrect .cartOrderForm__feedback-incorrect-text {
+  opacity: 1;
+}
+
+.cartOrderForm__required {
+  align-self: flex-start;
+  font-size: 1.2rem;
+}
+
+.cartOrderForm__btn-submit {
+  position: absolute;
+  bottom: -8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: capitalize;
+  padding: 1rem 2rem;
+  background-color: #d49700;
+  border-radius: 1rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.2);
+  border: none;
+  transition: all 0.4s;
+  color: #000;
+  text-decoration: none;
+}
+
+.cartOrderForm__btn-submit:hover {
+  box-shadow: 0 1.5rem 2.5rem 0 rgba(0, 0, 0, 0.3);
+  transform: translate(-50%, -0.5rem);
+}
+
+.cartOrderForm__btn-submit:active {
+  box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.2);
+  transform: translate(-50%, 0rem);
+}

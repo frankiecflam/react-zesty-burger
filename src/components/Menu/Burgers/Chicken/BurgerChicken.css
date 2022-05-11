@@ -1,0 +1,10 @@
+.burgers__chicken-header {
+  font-size: 9.5rem;
+  text-align: center;
+}
+.burgers__chicken-items {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+  padding: 0 5rem;
+}

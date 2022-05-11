@@ -1,0 +1,9 @@
+.menuCard {
+  padding: 6.4rem 1rem;
+}
+
+@media only screen and (min-width: 48em) {
+  .menuCard {
+    padding: 6.4rem 7.2rem;
+  }
+}

@@ -1,0 +1,12 @@
+.drinks__body {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 2rem;
+  row-gap: 10rem;
+}
+
+@media only screen and (min-width: 48em) {
+  .drinks__body {
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+  }
+}

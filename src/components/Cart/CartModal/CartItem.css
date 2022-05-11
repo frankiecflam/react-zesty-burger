@@ -1,0 +1,34 @@
+.cartModal__item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  row-gap: 2rem;
+  font-size: 2rem;
+}
+
+.cartItem__category {
+  grid-column: 1/ -1;
+  color: #6d6d6d;
+  text-decoration: underline;
+}
+
+.cartItem__quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+  font-size: 1.6rem;
+}
+
+.cartItem__quantity-btn {
+  font-size: 1.6rem;
+  font-weight: 600;
+  border: none;
+  background-color: #ffc32c;
+  padding: 0.25rem 0.5rem;
+  border-radius: 50%;
+}
+
+.cartItem__price {
+  text-align: end;
+}

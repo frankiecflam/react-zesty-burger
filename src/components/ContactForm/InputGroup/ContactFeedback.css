@@ -1,0 +1,8 @@
+.contact__inputFeedback {
+  color: #6d6d6d;
+  font-size: 1.4rem;
+}
+
+.contact__inputFeedback::first-letter {
+  text-transform: uppercase;
+}

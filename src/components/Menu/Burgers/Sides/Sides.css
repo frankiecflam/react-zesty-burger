@@ -1,0 +1,11 @@
+.sides {
+  grid-column: 1 / -1;
+  border: 2px solid black;
+  padding: 2rem 1.5rem;
+}
+
+@media only screen and (min-width: 75em) {
+  .sides {
+    padding: 6.4rem 3rem;
+  }
+}

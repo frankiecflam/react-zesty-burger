@@ -1,0 +1,46 @@
+.contact__form-body {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 15rem;
+  row-gap: 2rem;
+  align-items: center;
+}
+
+.contact__form-control {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  position: relative;
+}
+
+.contact__form-name,
+.contact__form-email {
+  grid-column: 1 / -1;
+}
+
+@media only screen and (min-width: 62em) {
+  .contact__form-name,
+  .contact__form-email {
+    grid-column: auto;
+  }
+}
+
+.contact__form-recommend,
+.contact__form-comment {
+  grid-column: 1 / -1;
+  align-items: flex-start;
+}
+
+.contact__formSubmittedFeedback {
+  margin-top: 5rem;
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+@media only screen and (min-width: 75em) {
+  .contact__form-comment,
+  .contact__form-recommend {
+    width: 70%;
+  }
+}

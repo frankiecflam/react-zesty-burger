@@ -1,0 +1,38 @@
+.cartModal__submission {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cartModal__submission-innerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+}
+
+.cartModal__submission-heading-primary {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.cartModal__submission-orderRef {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.cartModal__submission-orderMessage {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.cartModal__failedSubmission-message {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.5rem;
+}
+
+.cartModal__failedSubmission-contact {
+  color: #6d6d6d;
+}

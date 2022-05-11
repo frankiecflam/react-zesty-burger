@@ -1,0 +1,46 @@
+.btn__itemAdd {
+  background-color: #d49700;
+  color: #000;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  font-size: 2rem;
+  border: none;
+  box-shadow: 0 1rem 1.5rem 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.4s;
+  cursor: pointer;
+  position: relative;
+}
+
+.btn__itemAdd:hover {
+  background-color: #000;
+  color: #d49700;
+  transform: translateY(-0.5rem);
+  box-shadow: 0 1.5rem 2rem 0 rgba(0, 0, 0, 0.3);
+}
+
+.btn__itemAdd:active {
+  transform: translateY(0rem);
+  box-shadow: 0 1rem 1.5rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn__itemAdd::after {
+  content: "Item Added";
+  position: absolute;
+  bottom: -3rem;
+  left: 50%;
+  width: 100px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #373737;
+  opacity: 0;
+  visibility: hidden;
+  text-transform: capitalize;
+  transform: translateX(-50%);
+  transition: all 0.5s;
+}
+
+.btn__itemAdd.active::after {
+  opacity: 1;
+  visibility: visible;
+}

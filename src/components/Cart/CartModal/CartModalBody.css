@@ -1,0 +1,7 @@
+.cartModal__body {
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5rem;
+  position: relative;
+}

@@ -1,0 +1,6 @@
+.drinks__card {
+  background-color: #FFEDC0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5rem;
+}

@@ -1,0 +1,13 @@
+.btn__formBack {
+  text-decoration: none;
+  padding: 1rem 2rem;
+  background-color: #ffc32c;
+  color: #fff;
+  font-weight: 500;
+  font-size: 2rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.1);
+
+  align-self: center;
+}

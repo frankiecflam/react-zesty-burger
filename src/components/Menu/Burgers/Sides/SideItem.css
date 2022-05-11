@@ -1,0 +1,25 @@
+.sides__item {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+
+@media only screen and (min-width: 48em) {
+  .sides_item {
+    column-gap: 5rem;
+  }
+}
+
+.sides__item-description {
+  color: #373737;
+  line-height: 140%;
+}
+
+.sides__item-price {
+  text-align: center;
+  font-weight: 600;
+  color: #373737;
+  font-size: 2.5rem;
+}

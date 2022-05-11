@@ -1,0 +1,21 @@
+.contact__form-heading {
+  padding: 0rem 2rem;
+  background-color: #ffedc0;
+  display: inline-block;
+  position: absolute;
+  top: -5%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  text-transform: uppercase;
+  font-size: 3.9rem;
+  font-weight: 600;
+  letter-spacing: -0.1rem;
+  text-align: center;
+}
+
+.contact__form-description {
+  text-align: center;
+  color: #373737;
+  font-size: 2rem;
+}

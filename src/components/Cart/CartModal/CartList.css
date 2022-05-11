@@ -1,0 +1,11 @@
+.cartList {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.cartList__category {
+  color: #6d6d6d;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
