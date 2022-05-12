@@ -12,7 +12,7 @@ const About = () => {
             <div className="about__inner-text">
               <p className="about__description">
                 We are a family-run burger shop making a variery of burgers with
-                premium ingredients and singature recipes. Up to this moment, we
+                premium ingredients and signature recipes. Up to this moment, we
                 have already served more than 100,000 customers in Manchester.
               </p>
 
