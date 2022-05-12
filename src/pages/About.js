@@ -1,8 +1,16 @@
 import "./About.css";
 import Container from "../components/UI/Container";
 import aboutBg_2240 from "../assets/images/about/aboutBg-2240.jpg";
+import { useState } from "react";
+import LoadingSpinner from "../components/UI/LoadingSpinner";
 
 const About = () => {
+  const [imgLoaded, setImgLoaded] = useState(false);
+
+  const handleImgLoaded = () => {
+    setImgLoaded(true);
+  };
+
   return (
     <div className="about">
       <Container className="about__body">
@@ -35,10 +43,12 @@ const About = () => {
               </div>
             </div>
             <div className="about__inner-photo">
+              {!imgLoaded && <LoadingSpinner />}
               <img
                 className="about__inner-img"
                 src={aboutBg_2240}
                 alt="zesty burgers"
+                onLoad={handleImgLoaded}
               />
             </div>
           </div>

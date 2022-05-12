@@ -1,0 +1,30 @@
+.loadingSpinner {
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 10rem auto;
+}
+
+.loadingSpinner::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 80px;
+  z-index: 999;
+  border-radius: 50%;
+  border-width: 6px;
+  border-style: solid;
+  border-color: #DBDBDB transparent transparent transparent;
+
+  animation: spin 1s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

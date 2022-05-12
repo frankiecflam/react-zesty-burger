@@ -2,14 +2,17 @@ import "./Menu.css";
 import Container from "../components/UI/Container";
 import Burgers from "../components/Menu/Burgers/Burgers";
 import Drinks from "../components/Menu/Drinks/Drinks";
+import LoadingSpinner from "../components/UI/LoadingSpinner";
 
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Menu = () => {
   const [menu, setMenu] = useState([]);
+  const [menuLoaded, setMenuLoaded] = useState(false);
 
   useEffect(() => {
     const fetchMenu = async () => {
+      setMenuLoaded(false);
       const response = await fetch(
         "https://react-zestyburgers-default-rtdb.europe-west1.firebasedatabase.app/menu.json"
       );
@@ -24,6 +27,7 @@ const Menu = () => {
       setMenu(loadedMenu);
     };
     fetchMenu();
+    setMenuLoaded(true);
   }, []);
 
   const sortedMenu = menu.sort((a, b) => {
@@ -45,6 +49,8 @@ const Menu = () => {
   return (
     <div className="menu">
       <Container className="menu__body">
+        {!menuLoaded && <LoadingSpinner />}
+
         <Burgers burgerMenu={burgerMenu} />
         <Drinks drinkMenu={drinkMenu} />
       </Container>
