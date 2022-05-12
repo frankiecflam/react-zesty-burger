@@ -8,7 +8,7 @@ const NavLogo = () => {
       <NavLink to="/" className="nav__logoLink">
         <div className="nav__logo">
           <GiHamburger />
-          <p>Zesty Burger</p>
+          <p>Zesty Burgers</p>
         </div>
       </NavLink>
     </div>
