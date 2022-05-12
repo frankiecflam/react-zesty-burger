@@ -77,7 +77,7 @@ In cart modal, users can modifiy the quantity of items by clicking "-" or "+" bu
 - React redux
 - React redux toolkits
 - React router
-- Mobile Responsiveness
+- Mobile responsiveness
 
 ### Why I coded this project
 
