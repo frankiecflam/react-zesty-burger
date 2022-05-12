@@ -67,7 +67,6 @@ In cart modal, users can modifiy the quantity of items by clicking "-" or "+" bu
 
 ### Links
 
-- Solution URL: [https://github.com/frankiecflam/react-zesty-burgers](https://github.com/frankiecflam/react-zesty-burgers)
 - Live Site URL: [https://zestyburgers.netlify.app/](https://zestyburgers.netlify.app/)
 
 ## My process
@@ -77,7 +76,7 @@ In cart modal, users can modifiy the quantity of items by clicking "-" or "+" bu
 - React hooks
 - React redux
 - React redux toolkits
-- React Router
+- React router
 - Mobile Responsiveness
 
 ### Why I coded this project
