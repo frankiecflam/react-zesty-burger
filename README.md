@@ -55,7 +55,7 @@ In cart modal, users can modifiy the quantity of items by clicking "-" or "+" bu
 
 ![Menu](./Screenshot/Screenshot%20-%20Desktop-Menu.png)
 
-![Cart](./Screenshot/Screenshot%20-%20Mobile-Cart.png)
+![Cart](./Screenshot/Screenshot%20-%20Desktop-Cart.png)
 
 #### Mobile View
 
@@ -156,5 +156,5 @@ function App() {
 ## Author
 
 - Email - [Frankie Lam] frankiechunfai@gmail.com
-- Instagram - [@frankie___lam](https://www.instagram.com/frankie___lam/)
+- Instagram - [@frankie\_\_\_lam](https://www.instagram.com/frankie___lam/)
 - Facebook - [Frankie Lam](https://www.facebook.com/frankiecflam/)
