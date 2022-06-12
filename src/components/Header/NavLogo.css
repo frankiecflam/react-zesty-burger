@@ -17,3 +17,9 @@
   z-index: 9999;
   color: #000;
 }
+
+@media only screen and (min-width: 75em) {
+  .nav__logo {
+    color: #fff;
+  }
+}
