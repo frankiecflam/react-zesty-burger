@@ -6,11 +6,15 @@
   padding: 2.4rem 1rem;
 }
 
-@media only screen and (max-width: 74.99em) {
+@media only screen and (max-width: 75em) {
   .menuView {
     position: fixed;
     background-color: #d49700;
     z-index: 999;
+  }
+
+  .header {
+    padding: 4.8rem 3.6rem;
   }
 }
 
