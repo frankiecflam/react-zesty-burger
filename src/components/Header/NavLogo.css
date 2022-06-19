@@ -6,7 +6,7 @@
 .nav__logoLink {
   text-decoration: none;
   color: inherit;
-  font-size: 2.5rem;
+  font-size: 2rem;
   letter-spacing: -1px;
 }
 
@@ -21,5 +21,9 @@
 @media only screen and (min-width: 75em) {
   .nav__logo {
     color: #fff;
+  }
+
+  .nav__logoLink {
+    font-size: 2.5rem;
   }
 }
