@@ -154,6 +154,6 @@ function App() {
 
 ## Author
 
-- Email - [Frankie Lam] frankiechunfai@gmail.com
+- Email - [Frankie Lam] cfl.frankie@gmail.com
 - Instagram - [@frankie\_\_\_lam](https://www.instagram.com/frankie___lam/)
 - Facebook - [Frankie Lam](https://www.facebook.com/frankiecflam/)
