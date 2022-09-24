@@ -24,3 +24,4 @@ yarn-error.log*
 
 # ToDO
 TODO.txt
+*.fig
