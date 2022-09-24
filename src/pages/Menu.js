@@ -4,56 +4,51 @@ import Burgers from "../components/Menu/Burgers/Burgers";
 import Drinks from "../components/Menu/Drinks/Drinks";
 import LoadingSpinner from "../components/UI/LoadingSpinner";
 
-import React, { useEffect, useState } from "react";
+import useGetMenu from "../hooks/useGetMenu";
 
 const Menu = () => {
-  const [menu, setMenu] = useState([]);
-  const [menuLoaded, setMenuLoaded] = useState(false);
+  const { isLoading, error, data: menu } = useGetMenu();
+  let content;
 
-  useEffect(() => {
-    const fetchMenu = async () => {
-      setMenuLoaded(false);
-      const response = await fetch(
-        "https://react-zestyburgers-default-rtdb.europe-west1.firebasedatabase.app/menu.json"
-      );
-      if (!response.ok) throw new Error("Unable to load menu data");
+  if (isLoading) {
+    content = <LoadingSpinner />;
+  }
 
-      const data = await response.json();
-      let loadedMenu = [];
+  if (error) {
+    content = (
+      <h1 className="menu__errorMessage">
+        Error has occured fetching menu from the database!
+      </h1>
+    );
+  }
 
-      for (const key in data) {
-        loadedMenu.push(data[key]);
+  if (!isLoading && !error) {
+    const sortedMenu = menu.sort((a, b) => {
+      if (a.id < b.id) {
+        return -1;
       }
-      setMenu(loadedMenu);
-    };
-    fetchMenu();
-    setMenuLoaded(true);
-  }, []);
+      if (a.id > b.id) {
+        return 1;
+      }
+      return 0;
+    });
 
-  const sortedMenu = menu.sort((a, b) => {
-    if (a.id < b.id) {
-      return -1;
-    }
-    if (a.id > b.id) {
-      return 1;
-    }
-    return 0;
-  });
+    const burgerMenu = sortedMenu.filter(
+      (item) => item.category === "burgers" || item.category === "sides"
+    );
 
-  const burgerMenu = sortedMenu.filter(
-    (item) => item.category === "burgers" || item.category === "sides"
-  );
-
-  const drinkMenu = sortedMenu.filter((item) => item.category === "drinks");
+    const drinkMenu = sortedMenu.filter((item) => item.category === "drinks");
+    content = (
+      <>
+        <Burgers burgerMenu={burgerMenu} />
+        <Drinks drinkMenu={drinkMenu} />
+      </>
+    );
+  }
 
   return (
     <div className="menu">
-      <Container className="menu__body">
-        {!menuLoaded && <LoadingSpinner />}
-
-        <Burgers burgerMenu={burgerMenu} />
-        <Drinks drinkMenu={drinkMenu} />
-      </Container>
+      <Container className="menu__body">{content}</Container>
     </div>
   );
 };
