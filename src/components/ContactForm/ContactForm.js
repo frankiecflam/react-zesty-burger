@@ -148,7 +148,7 @@ const ContactForm = () => {
   };
 
   return (
-    <form className="contact__form" onSubmit={handleFormSubmit}>
+    <form className="contact__form" onSubmit={handleFormSubmit} aria-label="contact form">
       <ContactFormHeader formSubmitted={formSubmitted} />
       <ContactFormBody
         formSubmitted={formSubmitted}
